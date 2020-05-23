@@ -1,27 +1,42 @@
-# GhClone
+# gh-search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+A demo application in angular to search repositories on [GitHub](https://github.com)
 
-## Development server
+### Development server
+```bash
+$ npm start
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Build
+```bash
+$ npm run build
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The build artifacts will be stored in the `dist/` directory.
 
-## Build
+For a production build:
+```bash
+$ npm run build:prod
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Running unit tests
+```bash
+$ npm run test
+```
 
-## Running unit tests
+Tests are executed via [Karma](https://karma-runner.github.io).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Running end-to-end tests
+```bash
+$ npm run e2e
+```
 
-## Running end-to-end tests
+Tests are executed via [Protractor](http://www.protractortest.org/).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### License
+> "THE BEER-WARE LICENSE" (Revision 42):
+> [Gowda](https://github.com/gowda) wrote this file.  As long as you retain
+> this notice you can do whatever you want with this stuff. If we meet
+> some day, and you think this stuff is worth it, you can buy me a beer in return.

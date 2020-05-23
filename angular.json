@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gh-clone": {
+    "gh-search": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gh-clone",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -66,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gh-clone:build"
+            "browserTarget": "gh-search:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gh-clone:build:production"
+              "browserTarget": "gh-search:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gh-clone:build"
+            "browserTarget": "gh-search:build"
           }
         },
         "test": {
@@ -114,18 +115,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gh-clone:serve"
+            "devServerTarget": "gh-search:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gh-clone:serve:production"
+              "devServerTarget": "gh-search:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "gh-clone",
+  "defaultProject": "gh-search",
   "cli": {
     "analytics": "bcc1f6ae-e234-4d85-a7e9-3943853f4ea6"
   }
