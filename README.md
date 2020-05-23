@@ -1,6 +1,9 @@
 # gh-search
+![](https://github.com/gowda/gh-search/workflows/deployment/badge.svg)
 
 A demo application in angular to search repositories on [GitHub](https://github.com)
+
+[Live demo](https://gowda.github.io/gh-search)
 
 ### Development server
 ```bash
