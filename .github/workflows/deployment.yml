@@ -34,7 +34,7 @@ jobs:
           git config user.name "${{ github.actor }}"
           git fetch origin gh-pages
           git checkout -b gh-pages origin/gh-pages
-          git rm -rf .
+          git rm *.js *.html *.css *.ico
           mv dist/* .
           rmdir dist
           git add .
